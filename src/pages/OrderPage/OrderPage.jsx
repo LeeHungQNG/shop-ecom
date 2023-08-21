@@ -161,13 +161,13 @@ const OrderPage = ({ count = 1 }) => {
   const { isLoading, data } = mutationUpdate;
 
   const handleCancleUpdate = () => {
-    // setStateUserDetails({
-    //   name: '',
-    //   email: '',
-    //   phone: '',
-    //   // isAdmin: false,
-    // });
-    // form.resetFields();
+    setStateUserDetails({
+      name: '',
+      email: '',
+      phone: '',
+      isAdmin: false,
+    });
+    form.resetFields();
     setIsOpenModalUpdateInfo(false);
   };
 
